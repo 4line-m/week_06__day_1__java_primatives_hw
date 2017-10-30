@@ -1,8 +1,14 @@
 class Bus{
+  private int number;
   private Person[] passengers;
 
-  public Bus(){
+  public Bus(int number){
+    this.number = number;
     this.passengers = new Person[10];
+  }
+
+  public int getNumber(){
+    return this.number;
   }
 
   public int passengerCount(){

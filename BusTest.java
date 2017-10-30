@@ -8,8 +8,14 @@ public class BusTest{
 
   @Before
   public void before(){
-    this.bus = new Bus();
+    this.bus = new Bus(22);
     this.passenger = new Person();
+  }
+
+  @Test
+  public void hasNumber(){
+    int number = bus.getNumber();
+    assertEquals(22, number);
   }
 
   @Test
