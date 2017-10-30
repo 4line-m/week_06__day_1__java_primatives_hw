@@ -15,4 +15,16 @@ class Bus{
     return count;
   }
 
+  public void addPassenger(Person passenger){
+    if(isBusFull()){
+      return;
+    }
+    int passengerCount = passengerCount(); //if you didn't add this and add o in belly below like belly[0] it is not dynamic
+    passengers[passengerCount] = passenger;
+  }
+
+  public boolean isBusFull(){
+    return passengerCount() == passengers.length;
+  }
+
 }
