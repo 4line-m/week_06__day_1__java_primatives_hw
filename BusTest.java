@@ -45,6 +45,11 @@ public class BusTest{
     assertEquals(true, bus.isBusFull());
   }
 
-
+  @Test
+  public void canBusBeEmptied(){
+    bus.addPassenger(passenger);
+    bus.emptyBus();
+    assertEquals(0, bus.passengerCount());
+  }
 
 }

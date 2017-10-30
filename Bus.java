@@ -33,4 +33,9 @@ class Bus{
     return passengerCount() == passengers.length;
   }
 
+  public void emptyBus(){
+    for (int i = 0; i < passengers.length; i++){
+    passengers[i] = null;
+    }
+  }
 }
