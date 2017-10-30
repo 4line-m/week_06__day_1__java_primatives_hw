@@ -20,4 +20,9 @@ public class BusStopTest{
     assertEquals("Waverley Station", name);
   }
 
+  @Test
+  public void QueueStartsEmpty(){
+    assertEquals(0, busStop.passengersQueueCount());
+  }
+
 }

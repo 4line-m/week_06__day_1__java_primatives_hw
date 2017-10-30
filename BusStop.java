@@ -10,4 +10,15 @@ class BusStop {
   public String getName(){
     return this.name;
   }
+
+  public int passengersQueueCount(){
+    int count = 0;
+    for(Person passenger : passengersQueue){
+      if(passenger != null){
+        count++;
+      }
+    }
+    return count;
+  }
+
 }
