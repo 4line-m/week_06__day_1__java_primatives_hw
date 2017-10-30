@@ -11,6 +11,10 @@ class Bus{
     return this.number;
   }
 
+  public void setNumber(int newNumber){
+    this.number = newNumber;
+  }
+
   public int passengerCount(){
     int count = 0;
     for(Person passenger : passengers){
