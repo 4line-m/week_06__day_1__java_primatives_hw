@@ -5,6 +5,7 @@ class BusStop {
   public BusStop(String name){
     this.name = name;
     this.passengersQueue = new Person[5];
+    //passed 5 but maybe 'capacity' would be best?
   }
 
   public String getName(){
@@ -20,5 +21,10 @@ class BusStop {
     }
     return count;
   }
+
+ //  public void addPassengerToQueue(Person passenger){
+ //   int passengersQueueCount = passengersQueueCount();
+ //   passengersQueue[passengersQueueCount] =  passenger;
+ // }
 
 }
