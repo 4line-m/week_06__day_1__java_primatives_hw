@@ -30,11 +30,21 @@ public class BusTest{
   }
 
   @Test
-  public void busIsFull(){
+  public void cannotAddPassengerWhenBusIsFull(){
     for(int i = 0; i < 11; i++){
+      bus.addPassenger(passenger);
+    }
+    assertEquals(10, bus.passengerCount());
+  }
+
+  @Test
+  public void busIsFull(){
+    for(int i = 0; i < 10; i++){
       bus.addPassenger(passenger);
     }
     assertEquals(true, bus.isBusFull());
   }
+
+
 
 }
